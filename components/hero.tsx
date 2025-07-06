@@ -13,7 +13,7 @@ export function Hero() {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-white leading-tight">
                 Hi, I'm{" "}
                 <span className="bg-gradient-to-r from-green-600 to-orange-600 bg-clip-text text-transparent">
-                  Fidelia Jummai Moore
+                  Fidelia Jummai Parker
                 </span>
               </h1>
               <p className="text-xl sm:text-2xl text-slate-600 dark:text-slate-300">Educational Author & Publisher</p>
