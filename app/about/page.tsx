@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
+import { VideoPlayer } from "@/components/video-player"
 import { BookOpen, Globe, Award, Users, Heart, Target } from "lucide-react"
 import Image from "next/image"
 
@@ -48,7 +49,7 @@ export default function AboutPage() {
         <div className="text-center mb-16">
           <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-6">About Me</h1>
           <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
-            Founder of Parker Inc. • Creating joyful, culturally-relevant learning experiences for early learners
+            Founder of FMJ Ultimate Books Inc. Creating joyful, culturally-relevant learning experiences for early learners
           </p>
         </div>
 
@@ -57,42 +58,31 @@ export default function AboutPage() {
           <div className="space-y-6">
             <h2 className="text-3xl font-bold text-slate-900 dark:text-white">My Story</h2>
             <div className="space-y-4 text-lg text-slate-600 dark:text-slate-300">
-              <p>
-                I'm Fidelia Jummai Parker, an educational author and founder of Parker Inc., where we create joyful,
-                culturally-relevant learning experiences for early learners. With a background in Library Science and a
-                lifelong passion for literacy, my mission is to make education both accessible and relatable—especially
-                for children in multilingual communities. Each of my books is thoughtfully designed to merge English
-                with native languages like Hausa and Arabic, helping children build strong literacy skills while staying
-                connected to their cultural roots.
+               <p>
+                I’m Fidelia Jummai Parker, an educational author and founder of FJM Ultimate Books Inc. I was born and raised in Kano. I did my elementary and secondary education from Federal Government College Kano. With a background in Library Science from the University of Maiduguri, a lifelong passion for literacy, my mission is to make education both accessible and relatable - especially for children in multilingual communities. 
               </p>
               <p>
-                Born and raised in Kano City and graduated from the University of Maiduguri, my journey has been shaped
-                by a deep love for books, global experiences, and community service. From volunteering at the Arlington
-                Public Library in Texas to being an active member of Rotary International and breast cancer awareness
-                initiatives, I've always been driven by the power of knowledge to uplift and empower. My work reflects
-                this passion, blending educational rigor with fun, creativity, and local relevance.
+                My journey has been shaped by a deep love for books, global experiences and community service. From volunteering at the Arlington Public Library, Texas USA to being an active member of Rotary International and Breast Cancer Awareness Walk initiatives.
               </p>
               <p>
-                At Parker Inc., we collaborate with educators, parents, and child development experts to ensure every
-                book is not just a tool for learning but a spark for curiosity. Whether you're a parent, teacher, or
-                school administrator, you'll find our books are more than just pages—they're bridges between languages,
-                cultures, and bright futures. Welcome to a world where learning is joyful, meaningful, and made just for
-                your little learners.
+                At FJM ULTIMATE BOOKS INC., we collaborate with educators, parents and child development experts to ensure every book is not just a tool for learning but a spark for curiosity. Welcome to a world where learning is joyful, meaningful and made just for your little learners
               </p>
             </div>
           </div>
 
           <div className="relative">
-            <div className="relative w-full max-w-md mx-auto">
+            {/* <div className="relative w-full max-w-md mx-auto">
               <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg blur-3xl opacity-20"></div>
               <Image
-                src="/placeholder.svg?height=500&width=400"
-                alt="Fidelia Jummai Moore"
+                src="/placeholder-about.jpg?height=500&width=400"
+                alt="Fidelia Jummai Parker"
                 width={400}
                 height={500}
                 className="relative rounded-lg border-4 border-white dark:border-slate-800 shadow-2xl"
               />
-            </div>
+            </div> */}
+
+            <VideoPlayer/>       
           </div>
         </div>
 

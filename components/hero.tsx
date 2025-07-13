@@ -44,7 +44,7 @@ export function Hero() {
             <div className="relative w-full max-w-md mx-auto">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full blur-3xl opacity-20"></div>
               <Image
-                src="/placeholder.svg?height=400&width=400"
+                src="/placeholder-home.jpg?height=400&width=400"
                 alt="Profile"
                 width={400}
                 height={400}
@@ -52,6 +52,7 @@ export function Hero() {
               />
             </div>
           </div>
+          
         </div>
 
         <div className="flex justify-center mt-16">
