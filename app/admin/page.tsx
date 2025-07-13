@@ -28,7 +28,7 @@ export default function AdminPage() {
     {
       id: 2,
       title: "English to Arabic Animal Names",
-      price: 3000,
+      price: 4000,
       status: "Published",
       sales: 124,
       revenue: 372000,

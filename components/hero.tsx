@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowDown, Mail, BookOpen } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { VideoPlayer } from "./video-player"
 
 export function Hero() {
   return (
@@ -41,7 +42,7 @@ export function Hero() {
           </div>
 
           <div className="relative">
-            <div className="relative w-full max-w-md mx-auto">
+            {/* <div className="relative w-full max-w-md mx-auto">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full blur-3xl opacity-20"></div>
               <Image
                 src="/placeholder-home.jpg?height=400&width=400"
@@ -50,9 +51,10 @@ export function Hero() {
                 height={400}
                 className="relative rounded-full border-4 border-white dark:border-slate-800 shadow-2xl"
               />
-            </div>
+            </div> */}
+            <VideoPlayer/>
           </div>
-          
+
         </div>
 
         <div className="flex justify-center mt-16">

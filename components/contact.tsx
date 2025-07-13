@@ -25,7 +25,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-slate-900 dark:text-white">Email</h3>
-                  <p className="text-slate-600 dark:text-slate-300">fidelia.jummai@example.com</p>
+                  <p className="text-slate-600 dark:text-slate-300">jummaiparker@gmail.com</p>
                 </div>
               </div>
 
@@ -35,7 +35,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-slate-900 dark:text-white">Phone</h3>
-                  <p className="text-slate-600 dark:text-slate-300">+234 (0) 123-456-7890</p>
+                  <p className="text-slate-600 dark:text-slate-300">+234 (0) 704 671 2282</p>
                 </div>
               </div>
 

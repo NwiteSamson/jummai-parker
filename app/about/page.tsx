@@ -71,7 +71,7 @@ export default function AboutPage() {
           </div>
 
           <div className="relative">
-            {/* <div className="relative w-full max-w-md mx-auto">
+            <div className="relative w-full max-w-md mx-auto">
               <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg blur-3xl opacity-20"></div>
               <Image
                 src="/placeholder-about.jpg?height=500&width=400"
@@ -80,9 +80,9 @@ export default function AboutPage() {
                 height={500}
                 className="relative rounded-lg border-4 border-white dark:border-slate-800 shadow-2xl"
               />
-            </div> */}
+            </div>
 
-            <VideoPlayer/>       
+            {/* <VideoPlayer/>        */}
           </div>
         </div>
 

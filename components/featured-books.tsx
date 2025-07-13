@@ -23,7 +23,7 @@ export function FeaturedBooks() {
       id: 2,
       title: "English to Arabic Animal Names",
       description: "Bilingual learning made easy! Learn animal names in both English and Arabic.",
-      price: 3000,
+      price: 4000,
       rating: 4.8,
       reviews: 124,
       image: "/images/alphabet-book-english-arabic.jpg",
