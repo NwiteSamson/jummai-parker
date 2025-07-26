@@ -13,7 +13,7 @@ export function FeaturedBooks() {
       id: 1,
       title: "Jummai's A-Z Animal Alphabet Book",
       description: "A comprehensive alphabet learning book featuring animals from A to Z.",
-      price: 2500,
+      // price: 2500,
       rating: 4.9,
       reviews: 156,
       image: "/images/animal-alphabet-book.jpg",
@@ -23,7 +23,7 @@ export function FeaturedBooks() {
       id: 2,
       title: "English to Arabic Animal Names",
       description: "Bilingual learning made easy! Learn animal names in both English and Arabic.",
-      price: 4000,
+      // price: 4000,
       rating: 4.8,
       reviews: 124,
       image: "/images/alphabet-book-english-arabic.jpg",
@@ -33,7 +33,7 @@ export function FeaturedBooks() {
       id: 6,
       title: "Sight Words Activity Book",
       description: "Build reading fluency with essential sight words through engaging activities.",
-      price: 2200,
+      // price: 2200,
       rating: 4.9,
       reviews: 189,
       image: "/images/sight-words-book.jpg",
@@ -83,7 +83,7 @@ export function FeaturedBooks() {
                   <span className="text-sm text-slate-500">({book.reviews} reviews)</span>
                 </div>
                 <div className="text-xl font-bold text-green-600 dark:text-green-400">
-                  ₦{book.price.toLocaleString()}
+                  {/* ₦{book.price.toLocaleString()} */}
                 </div>
               </CardContent>
               <CardFooter className="p-6 pt-0">

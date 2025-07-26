@@ -64,7 +64,6 @@ export function VideoPlayer() {
       )} */}
 
             <iframe
-        // src="https://www.youtube.com/embed/XZAVnRdLCjI?autoplay=1&rel=0"
         src="https://www.youtube.com/embed/x0Z-eViflKQ?si=NPbmr5BWOLH6P9kH"
         className="w-full h-full"
         frameBorder="0"

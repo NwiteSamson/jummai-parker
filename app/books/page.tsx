@@ -19,7 +19,7 @@ export default function BooksPage() {
       title: "Jummai's A-Z Animal Alphabet Book",
       description:
         "A comprehensive alphabet learning book featuring animals from A to Z, perfect for early readers and language development.",
-      price: 2500,
+      // price: 2500,
       rating: 4.9,
       reviews: 156,
       image: "/images/animal-alphabet-book.jpg",
@@ -33,7 +33,7 @@ export default function BooksPage() {
       title: "English to Arabic Animal Names",
       description:
         "Bilingual learning made easy! Learn animal names in both English and Arabic with beautiful illustrations.",
-      price: 4000,
+      // price: 4000,
       rating: 4.8,
       reviews: 124,
       image: "/images/alphabet-book-english-arabic.jpg",
@@ -46,7 +46,7 @@ export default function BooksPage() {
       id: 3,
       title: "English to Hausa Alphabet Book",
       description: "Master the alphabet in both English and Hausa languages with engaging animal-themed learning.",
-      price: 3000,
+      // price: 3000,
       rating: 4.7,
       reviews: 98,
       image: "/images/alphabet-book-hausa.jpg",
@@ -59,7 +59,7 @@ export default function BooksPage() {
       id: 4,
       title: "Handwriting Coordination Book",
       description: "Develop fine motor skills and handwriting coordination with fun tracing activities and exercises.",
-      price: 2000,
+      // price: 2000,
       rating: 4.9,
       reviews: 203,
       image: "/images/handwriting-book.jpg",
@@ -73,7 +73,7 @@ export default function BooksPage() {
       title: "Shapes & Colours Basic Education",
       description:
         "Learn basic shapes and colors through interactive and colorful educational content designed for young learners.",
-      price: 1800,
+      // price: 1800,
       rating: 4.8,
       reviews: 167,
       image: "/images/shapes-colors-book.jpg",
@@ -87,7 +87,7 @@ export default function BooksPage() {
       title: "Sight Words Activity Book",
       description:
         "Build reading fluency with essential sight words through engaging activities and colorful illustrations.",
-      price: 2200,
+      // price: 2200,
       rating: 4.9,
       reviews: 189,
       image: "/images/sight-words-book.jpg",
@@ -204,7 +204,7 @@ export default function BooksPage() {
                 </div>
 
                 <div className="text-2xl font-bold text-green-600 dark:text-green-400 mb-4">
-                  ₦{ebook.price.toLocaleString()}
+                  {/* ₦{ebook.price.toLocaleString()} */}
                 </div>
               </CardContent>
               <CardFooter className="p-6 pt-0 space-y-2">
