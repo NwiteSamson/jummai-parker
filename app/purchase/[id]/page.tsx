@@ -34,7 +34,7 @@ export default function PurchasePage() {
       title: "Jummai's A-Z Animal Alphabet Book",
       description:
         "A comprehensive alphabet learning book featuring animals from A to Z, perfect for early readers and language development.",
-      price: 2500,
+      price: 9000,
       rating: 4.9,
       reviews: 156,
       image: "/images/animal-alphabet-book.jpg",
@@ -314,28 +314,92 @@ startxref
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2">
                     <CreditCard className="h-5 w-5" />
-                    <span>Choose Payment Method</span>
+                    <span>Unlock Your Copy Today !</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-center mb-6">
+                  {/* <div className="text-center mb-6">
                     <div className="text-3xl font-bold text-slate-900 dark:text-white">
                       ₦{book.price.toLocaleString()}
                     </div>
                     <p className="text-slate-600 dark:text-slate-300">
                       One-time payment • Instant access • {book.pages} pages
                     </p>
+                    <p >
+                      Get in Touch with The Author Directly.
+                    </p>
+                  </div> */}
+
+
+
+                  <div className="max-w-md mx-auto rounded-2xl shadow-lg bg-white dark:bg-slate-800 p-6 text-center">
+                      {/* Header */}
+                      <h2 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">
+                        Get Instant Access
+                      </h2>
+
+                      {/* Book details */}
+                      <p className="text-slate-600 dark:text-slate-300 mb-4">
+                        📖 {book.pages} pages • One-Time Payment
+                      </p>
+
+                      {/* CTA text */}
+                      <p className="text-lg font-medium text-slate-700 dark:text-slate-200 mb-6">
+                          <span className="text-blue-600">Contact The Author Directly</span> to get your copy.
+                      </p>
+
+                      {/* Contact button */}
+                      {/* <a
+                        href="https://wa.me/yourwhatsapplink"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center w-full px-5 py-3 bg-green-500 text-white font-semibold rounded-xl shadow hover:bg-green-600 transition"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-5 w-5 mr-2"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M20 3.5A10.5 10.5 0 0 0 3.1 17.7L2 22l4.5-1.2A10.5 10.5 0 1 0 20 3.5zm-9.3 14c-1.5 0-2.9-.4-4.1-1.1l-.3-.2-2.4.6.6-2.3-.2-.3c-.8-1.2-1.2-2.6-1.2-4.1C3 7.1 7.1 3 12 3s9 4.1 9 9-4.1 9-9 9zm5-6.5c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.5-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.4.1-.1.2-.2.3-.4.1-.1 0-.2 0-.4s-.6-1.4-.8-1.9c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.4.1-.5.3-.2.3-.7.7-.7 1.7 0 1 .7 2 1 2.4.1.1 1.5 2.3 3.6 3.2 1.4.6 2 .6 2.4.5.4-.1 1.2-.5 1.3-1 .2-.5.2-.9.2-1 0-.1-.1-.1-.3-.2z" />
+                        </svg>
+                        Contact on WhatsApp
+                      </a> */}
+
+                      <Button
+                        onClick={() => {
+                          const message = `Hi! I'm interested in your book: "${book.title}". Please I will like to get the book.`
+                          const whatsappUrl = `https://wa.me/2348132659017?text=${encodeURIComponent(message)}`
+                          window.open(whatsappUrl, "_blank")
+                        }}
+                         rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center w-full px-5 py-3 bg-green-500 text-white font-semibold rounded-xl shadow hover:bg-green-600 transition"
+                      >
+                      <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-5 w-5 mr-2"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M20 3.5A10.5 10.5 0 0 0 3.1 17.7L2 22l4.5-1.2A10.5 10.5 0 1 0 20 3.5zm-9.3 14c-1.5 0-2.9-.4-4.1-1.1l-.3-.2-2.4.6.6-2.3-.2-.3c-.8-1.2-1.2-2.6-1.2-4.1C3 7.1 7.1 3 12 3s9 4.1 9 9-4.1 9-9 9zm5-6.5c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.5-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.4.1-.1.2-.2.3-.4.1-.1 0-.2 0-.4s-.6-1.4-.8-1.9c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.4.1-.5.3-.2.3-.7.7-.7 1.7 0 1 .7 2 1 2.4.1.1 1.5 2.3 3.6 3.2 1.4.6 2 .6 2.4.5.4-.1 1.2-.5 1.3-1 .2-.5.2-.9.2-1 0-.1-.1-.1-.3-.2z" />
+                        </svg>
+                        Contact on WhatsApp
+                      </Button>
                   </div>
+              
+              
+                  
+
 
                   <Tabs defaultValue="manual" className="w-full">
-                    <TabsList className="grid w-full grid-cols-2">
+                    {/* <TabsList className="grid w-full grid-cols-2">
                       <TabsTrigger value="manual">Manual Payment</TabsTrigger>
                       <TabsTrigger value="direct">Direct Payment</TabsTrigger>
-                    </TabsList>
+                    </TabsList> */}
 
                     {/* Manual Payment Tab */}
                     <TabsContent value="manual" className="space-y-4">
-                      <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+                      {/* <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
                         <h3 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">Bank Transfer Details</h3>
                         <div className="space-y-2 text-sm">
                           <div className="flex justify-between">
@@ -355,37 +419,37 @@ startxref
                             <span className="font-bold text-green-600">₦{book.price.toLocaleString()}</span>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
 
-                      <Alert className="border-orange-200 bg-orange-50 dark:border-orange-800 dark:bg-orange-900/20">
+                      {/* <Alert className="border-orange-200 bg-orange-50 dark:border-orange-800 dark:bg-orange-900/20">
                         <AlertDescription className="text-orange-800 dark:text-orange-200">
                           <strong>Important:</strong> After making payment, contact me on WhatsApp with your payment
                           proof to get instant access to your book.
                         </AlertDescription>
-                      </Alert>
+                      </Alert> */}
 
-                      <Button
+                      {/* <Button
                         onClick={() => {
-                          const message = `Hi! I just made a payment of ₦${book.price.toLocaleString()} for "${book.title}". Please find my payment proof attached. My email is: [Your Email]`
-                          const whatsappUrl = `https://wa.me/2348123456789?text=${encodeURIComponent(message)}`
+                          const message = `Hi! I'm interested in your book: "${book.title}". Please I will like to get the book.`
+                          const whatsappUrl = `https://wa.me/2348132659017?text=${encodeURIComponent(message)}`
                           window.open(whatsappUrl, "_blank")
                         }}
                         className="w-full bg-green-600 hover:bg-green-700 text-white"
                         size="lg"
                       >
                         <MessageCircle className="mr-2 h-4 w-4" />
-                        Contact on WhatsApp with Payment Proof
-                      </Button>
+                        Contact on WhatsApp to Place Your Order
+                      </Button> */}
 
-                      <div className="text-center">
+                      {/* <div className="text-center">
                         <p className="text-xs text-slate-500">
                           Click the button above after making your bank transfer to send payment proof via WhatsApp
                         </p>
-                      </div>
+                      </div> */}
                     </TabsContent>
 
                     {/* Direct Payment Tab */}
-                    <TabsContent value="direct" className="space-y-4">
+                    {/* <TabsContent value="direct" className="space-y-4">
                       <form onSubmit={handlePayment} className="space-y-4">
                         <div>
                           <Label htmlFor="fullName">Full Name</Label>
@@ -448,10 +512,10 @@ startxref
                           Secure online payment processing • Instant access after payment
                         </p>
                       </div>
-                    </TabsContent>
+                    </TabsContent> */}
                   </Tabs>
 
-                  <div className="mt-6 flex items-center justify-center space-x-4 text-xs text-slate-500">
+                  {/* <div className="mt-6 flex items-center justify-center space-x-4 text-xs text-slate-500">
                     <div className="flex items-center">
                       <Shield className="h-3 w-3 mr-1" />
                       Secure Payment
@@ -460,7 +524,7 @@ startxref
                       <Clock className="h-3 w-3 mr-1" />
                       Instant Access
                     </div>
-                  </div>
+                  </div> */}
                 </CardContent>
               </Card>
             ) : (
